@@ -19,11 +19,11 @@ public class FilterOne implements Filter {
      * Default constructor. 
      */
     public FilterOne() {
-        System.out.println("=========构造函数=========");
+        System.out.println("========= FilterOne构造函数=========");
     }
     
     public void init(FilterConfig fConfig) throws ServletException {
-    	System.out.println("=========初始化方法=========");
+    	System.out.println("=========FilterOne初始化方法=========");
     	String initParam = fConfig.getInitParameter("param");
     	System.out.println("param =="+initParam);
 	}
@@ -32,17 +32,17 @@ public class FilterOne implements Filter {
      */
     public void doFilter(ServletRequest request, ServletResponse 
     		response, FilterChain chain) throws IOException, ServletException {
-    	System.out.println("=========开始执行dofilter方法=========");
+    	System.out.println("=========FilterOne开始执行dofilter方法=========");
     	
     	chain.doFilter(request, response);
-    	System.out.println("=========结束执行dofilter方法=========");
+    	System.out.println("=========FilterOne结束执行dofilter方法=========");
     }
 
 	/**
 	 * @see Filter#destroy()
 	 */
 	public void destroy() {
-		System.out.println("=========销毁方法=========");
+		System.out.println("=========FilterOne销毁方法=========");
 	}
 
 
