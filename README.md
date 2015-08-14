@@ -10,4 +10,3 @@ JSP学习的文件代码
 09是request内置对象代码
 10是response内置对象代码
 
-
