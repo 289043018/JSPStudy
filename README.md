@@ -1,4 +1,13 @@
-# JSPStudy
+﻿# JSPStudy
 JSP学习的文件代码
 
 该代码包含了JSP以及service和servlet的使用，还有添加了JDBC数据库连接的项目练习
+
+05是forward的代码
+06文件夹是include的代码
+07文件夹+UserEntity是javaBean的代码
+08文件夹是out内置对象代码
+09是request内置对象代码
+10是response内置对象代码
+
+
